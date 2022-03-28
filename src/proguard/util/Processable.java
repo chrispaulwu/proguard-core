@@ -54,4 +54,16 @@ public interface Processable
      * Gets the processing information.
      */
     public Object getProcessingInfo();
+
+
+    /**
+     * Sets the processing extra information.
+     */
+    public void setProcessingExtraInfo(Object processingExtraInfo);
+
+
+    /**
+     * Gets the processing extra information.
+     */
+    public Object getProcessingExtraInfo();
 }

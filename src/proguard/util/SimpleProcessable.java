@@ -28,7 +28,7 @@ implements   Processable
 {
     public int    processingFlags;
     public Object processingInfo;
-
+    public Object processingExtraInfo;
 
     /**
      * Creates an uninitialized SimpleProcessable.
@@ -74,5 +74,15 @@ implements   Processable
     public void setProcessingInfo(Object processingInfo)
     {
         this.processingInfo = processingInfo;
+    }
+
+    @Override
+    public Object getProcessingExtraInfo() {
+        return processingExtraInfo;
+    }
+
+    @Override
+    public void setProcessingExtraInfo(Object processingExtraInfo) {
+        this.processingExtraInfo = processingExtraInfo;
     }
 }
